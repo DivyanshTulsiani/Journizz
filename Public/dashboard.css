@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  background-color: #fffdf9;
+  /* background-color: aliceblue; */
+}
+
+.mainpage{
+  display: flex;
+}
+
+.sidebar{
+  width: 300px;
+  height: 100vh;
+  /* height: 500px; */
+  border-right: 1.8px solid rgb(238, 219, 219);
+  /* box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05); */
+}
+
+
+.iconlogo{
+  font-family: Inter, sans-serif;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 2rem;
+  background-color: #ff4f00;
+  font-size: 2rem;
+  border-radius: 0.2rem;
+  color: aliceblue;
+  /* color: #a8d7ff; */
+  font-weight: 900;
+  margin-right: 0.3rem;
+}
+
+.logo{
+  /* width: 300px; */
+  height: 4rem;
+  border-bottom: 1.8px solid rgb(238, 219, 219);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05); */
+}
+
+.logoin{
+  color: black;
+  font-weight: 700;
+  font-size: 1.7rem;
+  /* font-family: Roboto, sans-serif; */
+  font-family: Inter, sans-serif;
+
+}
+
+.main-content{
+  /* width: 100vh; */
+  width: 100%;
+  height: 100vh;
+}
+
+.navbar{
+  height: 4rem;
+  border-bottom: 1.8px solid rgb(238, 219, 219);
+  /* box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05); */
+  
+}
+
+
+.dash{
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  color: black;
+  font-size: 2.2rem;
+  
+  padding: 0.5rem;
+  padding-bottom: 0rem;
+}
+
+.greeting{
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  color: rgb(104 96 96);
+  font-size: 1rem;
+  padding-left: 0.5rem;
+  padding-top: 0rem;
+
+}
+
+
+.optionbar{
+  margin: 0 auto;
+  width: 60%;
+  /* margin-left: 0.5rem;
+  margin-top: 0.5rem; */
+  /* border: 1.8px solid rgb(238, 219, 219); */
+  /* background-color: rgb(238, 219, 219); */
+  background-color: rgb(242 235 235);
+  border-radius: 0.5rem;
+  height: 6%;
+
+}
+
+
+.journalarea{
+  display: flex;
+
+}
+
+
+.userjournal{
+  height: 35rem;
+  width: 29rem;
+  background-color: #f4f4f4;;
+  border: 2px solid #ff4f00;
+  border-radius: 1rem;
+  margin-left: 4rem;
+  margin-top: 2rem;
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+}
+
+.userjournaltop{
+  margin: 0 auto;
+  margin-top: 1rem;
+  background-color: #fffdf9;
+  height: 4rem;
+  width: 26rem;
+  border-radius: 1rem;
+}
