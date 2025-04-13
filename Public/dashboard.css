@@ -114,8 +114,9 @@ body{
 }
 
 
-.journalarea{
+.Journalarea{
   display: flex;
+  justify-content:;
 
 }
 
@@ -269,4 +270,63 @@ color: transparent;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+
+.geminisuggestions{
+  height: 35rem;
+  width: 29rem;
+  background-color: #f4f4f4;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  margin-left: 2rem;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #ff4f00;
+}
+
+.geminitop{
+  background-color: #fff;
+  height: 3rem;
+  width: 26rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  display: flex;
+}
+
+.geminilogomain{
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+  background: linear-gradient(90deg, #4A90E2, #BC3CD8, #FF5C93);
+  background-clip: text;
+-webkit-background-clip: text;
+color: transparent;
+-webkit-text-fill-color: transparent;
+font-size: 2rem;
+
+}
+
+.geminidesc{
+  color: black;
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  font-size: 0.7rem;
+  margin-left: 0.4rem;
+  letter-spacing: 0.05px;
+  margin-top: 1rem;
+}
+
+.geminimain{
+  height: 23rem;
+  width: 26rem;
+  background-color: #fff;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  border: none;
+  resize: vertical;
+  padding: 0.7rem;
 }
