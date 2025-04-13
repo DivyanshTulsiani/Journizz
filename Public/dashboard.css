@@ -148,6 +148,7 @@ body{
   display: flex;
   /* justify-content: space-between; */
   text-decoration: none;
+  font-weight: 600;
 
 }
 
@@ -186,6 +187,7 @@ body{
   display: flex;
   /* justify-content: space-between; */
   text-decoration: none;
+  font-weight: 600;
 }
 .calendar:hover{
   cursor: pointer;
@@ -220,6 +222,7 @@ body{
   display: flex;
   /* justify-content: space-between; */
   text-decoration: none;
+  font-weight: 600;
 }
 
 .history:hover{
@@ -254,6 +257,7 @@ body{
   display: flex;
   /* justify-content: space-between; */
   text-decoration: none;
+  font-weight: 600;
 }
 
 .reminder:hover{
@@ -281,6 +285,39 @@ body{
 }
 
 
+.logout{
+  margin: 0 auto;
+  margin-top: 18rem;
+  height: 2.5rem;
+  width: 13rem;
+  border-radius: 1rem;
+  background-color: #f4f4f4;
+  display: flex;
+  align-items: center;
+
+}
+
+.logouticon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  color: #525252;
+}
+
+
+.logoutname{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0.5rem;
+  font-size: 1rem;
+  font-family: Inter, sans-serif;
+  color: rgb(79, 56, 56);
+  font-weight: 700;
+}
+
 .main-content{
   /* width: 100vh; */
   width: 100%;
@@ -291,7 +328,14 @@ body{
   height: 4rem;
   border-bottom: 1.8px solid rgb(238, 219, 219);
   /* box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05); */
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
   
+}
+
+.twitterbutton{
+  margin-left: 62rem;
 }
 
 
