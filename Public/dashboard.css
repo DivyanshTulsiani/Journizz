@@ -65,6 +65,71 @@ body{
 
 }
 
+.profilesection{
+  margin: 0 auto;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f4f4;
+  height: 5rem;
+  width: 13rem;
+  border-radius: 1rem;
+
+}
+
+.profiletop{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  align-items: center;
+  height: 3rem;
+  width: 11rem;
+  background-color: #fff;
+  border-radius: 1rem;
+}
+
+
+.userimage{
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.5rem;
+  height: 2.5rem;
+  width: auto;
+  border-radius: 0.7rem;
+}
+
+
+.username{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 4.5rem;
+}
+.name{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.5rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: black;
+  font-family: Inter, sans-serif;
+}
+
+.username1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.5rem;
+  font-weight: 400;
+  font-size: 0.6rem;
+  color: rgb(147, 147, 147);
+  font-family: Inter, sans-serif;
+}
 .main-content{
   /* width: 100vh; */
   width: 100%;
