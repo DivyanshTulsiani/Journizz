@@ -130,6 +130,157 @@ body{
   color: rgb(147, 147, 147);
   font-family: Inter, sans-serif;
 }
+
+
+.sidebaroptions{
+  display: flex;
+  justify-content: ;
+  align-items: center;
+  flex-direction: column;
+}
+
+.home{
+  margin-top: 2.5rem;
+  height: 2.5rem;
+  width: 13rem;
+  border-radius: 1rem;
+  background-color: #f4f4f4;
+  display: flex;
+  /* justify-content: space-between; */
+  text-decoration: none;
+
+}
+
+.home:hover{
+  cursor: pointer;
+  background-color: #e7e7e7;
+}
+
+.homeicon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  color: green;
+}
+
+.homename{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0.5rem;
+  /* margin-right: 7rem; */
+  font-size: 1rem;
+  font-family: Inter, sans-serif;
+  color: rgb(79, 56, 56);
+}
+
+
+.calendar{
+  margin-top: 0.5rem;
+  height: 2.5rem;
+  width: 13rem;
+  border-radius: 1rem;
+  background-color: #f4f4f4;
+  display: flex;
+  /* justify-content: space-between; */
+  text-decoration: none;
+}
+.calendar:hover{
+  cursor: pointer;
+  background-color: #e7e7e7;
+}
+
+.calendaricon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  color: blue;
+}
+
+.calendarname{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0.5rem;
+  font-size: 1rem;
+  font-family: Inter, sans-serif;
+  color: rgb(79, 56, 56);
+}
+
+.history{
+  margin-top: 0.5rem;
+  height: 2.5rem;
+  width: 13rem;
+  border-radius: 1rem;
+  background-color: #f4f4f4;
+  display: flex;
+  /* justify-content: space-between; */
+  text-decoration: none;
+}
+
+.history:hover{
+  cursor: pointer;
+  background-color: #e7e7e7;
+}
+.historyicon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  color: #ff4f00;
+}
+
+.historyname{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0.5rem;
+  font-size: 1rem;
+  font-family: Inter, sans-serif;
+  color: rgb(79, 56, 56);
+}
+
+.reminder{
+  margin-top: 0.5rem;
+  height: 2.5rem;
+  width: 13rem;
+  border-radius: 1rem;
+  background-color: #f4f4f4;
+  display: flex;
+  /* justify-content: space-between; */
+  text-decoration: none;
+}
+
+.reminder:hover{
+  cursor: pointer;
+  background-color: #e7e7e7;
+}
+
+.remindericon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  color: #ffb300;
+}
+
+.remindername{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0.5rem;
+  font-size: 1rem;
+  font-family: Inter, sans-serif;
+  color: rgb(79, 56, 56);
+}
+
+
 .main-content{
   /* width: 100vh; */
   width: 100%;
