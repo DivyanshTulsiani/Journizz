@@ -257,6 +257,7 @@ color: transparent;
 
 .bookmark:hover{
   cursor: pointer;
+  color: gold;
 }
 
 
@@ -329,4 +330,82 @@ font-size: 2rem;
   border: none;
   resize: vertical;
   padding: 0.7rem;
+}
+
+.geminibottom{
+  margin: 0 auto;
+  background-color: #fff;
+  height: 3rem;
+  width: 26rem;
+  margin-top: 1.3rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.replace{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.replacebutton{
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+  color: #4A90E2;
+  font-size: 1.5rem;
+}
+
+.replacebutton:hover{
+  cursor: pointer;
+  color: #BC3CD8;
+}
+
+.improvemore{
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.improvemorebutton{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #f4f4f4;
+  border: none;
+  font-size: 1rem;
+  border-radius: 0.7rem;
+  height: 2rem;
+  width: 9rem;
+  color: black;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+}
+
+.improvemorebutton:hover{
+  cursor: pointer;
+  background-color: #e7e7e7;
+}
+
+.chatbutton{
+  color: #2682ec;
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+.checkicon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.7rem;
+  color: green;
+  font-size: 1.4rem;
+}
+
+.checkicon:hover{
+  cursor: pointer;
+  color: darkgreen;
 }
