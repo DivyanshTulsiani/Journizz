@@ -61,6 +61,48 @@ router.post('/addjournal',Authmiddleware,async function(req,res){
 })
 
 
+//_id to mongo har ek cheez ki nyi bnata hai
+//isliye hum user ki _id ko uske har journal mai daal rhe hai to idetnify them all together
+
+router.get('/getalljournals',Authmiddleware,async function(req,res){
+
+    //retrieving the username sent by auth after verification
+    const username = req.username
+
+    let userfound = await UserModel.findOne({username: username})
+
+    if(userfound){
+      let userId = userfound._id
+      console.log(userId)
+      try{
+        const journals = await JournalModel.find({
+          userId: userId
+        })
+
+        res.json({
+          journals
+        })
+  
+      }
+      catch(e){
+        res.status(500).json({
+          error: e
+        })
+      }
+
+    }
+    else{
+      res.status(404).json({
+        message: "Unable to find your journals"
+      })
+    }
+
+
+
+
+})
+
+
 
 
 
