@@ -5,6 +5,7 @@ const cors = require('cors')
 
 //imporrt the routes that u have created
 const userRoutes = require("./routes/users")
+const journalRoutes = require("./routes/journals")
 
 require('dotenv').config();
 
@@ -21,7 +22,11 @@ app.use(cors())
 
 //for now i am using app only will shift to making proper routes in future
 
+//enable userroutes no need to mention any routes here they are basically encapsularteed inside thsi or say traffic is diverted to user route from here 
+//this helps in modularity and clean code
 app.use(userRoutes)
+
+app.use(journalRoutes)
 
 
 

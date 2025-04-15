@@ -8,7 +8,7 @@ require('dotenv').config();
 
 // router.use(Router.json())
 
-const {UserModel} = require("../Database/db")
+const {UserModel,JournalModel} = require("../Database/db")
 
 const JWT_SECRET = process.env.JWT_SECRET
 
