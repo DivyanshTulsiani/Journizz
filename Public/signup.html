@@ -38,7 +38,7 @@
                 <div class="wave-bottom"></div>
             </div>
             <div class="content">
-                <h1>Log in</h1>
+                <h1>Sign up</h1>
                 <div class="input-group">
                     <label for="phone">Username</label>
                     <div class="input-field">
@@ -66,12 +66,32 @@
                             </svg>
                         </div>
                     </div>
+                    <br>
+                    <div class="input-group">
+                      <label for="phone">Email</label>
+                      <div class="input-field">
+                          <div class="icon">
+                              <img src="https://img.icons8.com/?size=100&id=23264&format=png&color=000000" class="usernameimg">
+                          </div>
+                          <input type="text" id="email" placeholder="Enter your email">
+                      </div>
+                  </div>
+
+                  <div class="input-group">
+                    <label for="phone">Name</label>
+                    <div class="input-field">
+                        <div class="icon">
+                            <img src="https://img.icons8.com/?size=100&id=23264&format=png&color=000000" class="usernameimg">
+                        </div>
+                        <input type="text" id="name" placeholder="Enter your name">
+                    </div>
+                </div>
                     <div class="forgot-link">
                         <a href="#">Forgot Password?</a>
                     </div>
                 </div>
                 
-                <button class="login-btn" onclick="login()">Log in</button>
+                <button class="login-btn" onclick="signup()">Log in</button>
                 
                 <div class="signup-link">
                     Don't have an account? <a href="#">Sign up</a>
@@ -85,32 +105,38 @@
 
     <script>
       let url = "http://localhost:3000"
-      async function login() {
-        username = document.getElementById("username").value
-        password = document.getElementById("password").value
+      async function signup() {
+        let username = document.getElementById("username").value
+        let password = document.getElementById("password").value
+        let email = document.getElementById("email").value
+        let name = document.getElementById("name").value
 
         try{
-          const response = await fetch(`${url}/signin`,{
+          const response = await fetch(`${url}/signup`,{
             method: "POST",
             headers: {
-              "Content-Type": "application/json",
+              "Content-Type": "application/json"
             },
             body: JSON.stringify({
-              username: username,
-              password: password
+              email: email,
+              password: password,
+              name: name,
+              username: username
             })
-          })
 
+          })
           if(response.ok){
-            alert("You are signed in")
+            alert("You are signed up")
+          }
+          else{
             const data = await response.json()
-            // console.log(data.token)
-            localStorage.setItem("token",data.token)
+            const message = data.message
+            alert(message);
           }
 
         }
         catch(e){
-          alert("Please check your credentials")
+          console.log(e)
         }
       }
     </script>
