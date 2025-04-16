@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  /* background-color: #fffdf9; */
+  background-color: #fff;
+  /* background-color: aliceblue; */
+}
+
+.mainpage{
+
+}
+
+.main-content{
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+
+.navbar{
+  height: 4rem;
+  border-bottom: 1.8px solid rgb(238, 219, 219);
+  /* box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05); */
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+/* .twitterbutton{
+  margin-left: 62rem;
+} */
+
+
+.iconlogo{
+  font-family: Inter, sans-serif;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 2rem;
+  background-color: #ff4f00;
+  font-size: 2rem;
+  border-radius: 0.2rem;
+  color: aliceblue;
+  /* color: #a8d7ff; */
+  font-weight: 900;
+  margin-right: 0.3rem;
+}
+
+.logo{
+  /* width: 300px; */
+  height: 4rem;
+  border-bottom: 1.8px solid rgb(238, 219, 219);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 4rem;
+
+  /* box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05); */
+}
+
+.logoin{
+  color: black;
+  font-weight: 700;
+  font-size: 1.7rem;
+  /* font-family: Roboto, sans-serif; */
+  font-family: Inter, sans-serif;
+
+}
+
+.rightnav{
+  display: flex;
+  margin-right: 4rem;
+}
+
+.dispimg{
+  width: 50%;
+  height: 100vh;
+  border-right: 2px solid rgb(238, 219, 219);
+}
+
+
+.rightside{
+  width: 50%;
+  height: 100vh;
+  border-right: 2px solid rgb(238, 219, 219);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F2F2F2;;
+}
+
+.login-container {
+  background-color: white;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 420px;
+  border-radius: 30px;
+  padding: 40px 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  position: relative;
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.imagebelowlogin{
+  height: 10rem;
+}
+.outerimagehero1{
+  display: flex;
+  justify-content: center;
+}
+.wave-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.wave-top {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  background: linear-gradient(to bottom right, rgba(180, 190, 250, 0.1), rgba(180, 190, 250, 0.05));
+}
+
+.wave-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  background: linear-gradient(to top right, rgba(180, 190, 250, 0.1), rgba(180, 190, 250, 0.05));
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+}
+
+h1 {
+  text-align: center;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.illustration {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #333;
+  font-weight: 500;
+}
+
+.input-field {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #e1e5ea;
+  border-radius: 10px;
+  font-size: 15px;
+  background-color: #f9fafc;
+  display: flex;
+  align-items: center;
+}
+
+.input-field input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding-left: 8px;
+  color: #555;
+}
+
+.input-field input::placeholder {
+  color: #aab0bc;
+}
+
+.icon {
+  color: #aab0bc;
+  width: 20px;
+  text-align: center;
+}
+
+.usernameimg{
+  color: #aab0bc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1rem;
+  width: auto;
+}
+
+.forgot-link {
+  text-align: right;
+  margin-top: 8px;
+}
+
+.forgot-link a {
+  color: #7f85f5;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.login-btn {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background-color: #ff4f00;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+  background-color: #080b48;
+}
+
+.signup-link {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+
+.signup-link a {
+  color: #7f85f5;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.toggle-password {
+  cursor: pointer;
+  color: #aab0bc;
+}
