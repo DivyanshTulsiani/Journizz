@@ -4,6 +4,8 @@ const router = Router()
 const jwt = require('jsonwebtoken')
 const mongoose = require('mongoose')
 const cors = require('cors')
+const path = require('path')
+
 require('dotenv').config();
 
 // router.use(Router.json())
@@ -102,6 +104,18 @@ router.post('/signin',async function(req,res){
 
 
 
+})
+
+
+//now these are get requests basically jab user signin krlega
+//to use dashboard wale page pe redirect krenge window.lo.href use krke
+//usse by default get request call hojati hai
+
+router.get('/dashboard',function(req,res){
+  
+  res.sendFile(path.join(__dirname,"../../Public/dashboard.html"))
+
+  
 })
 
 

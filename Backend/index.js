@@ -6,6 +6,7 @@ const cors = require('cors')
 //imporrt the routes that u have created
 const userRoutes = require("./routes/users")
 const journalRoutes = require("./routes/journals")
+const path = require('path')
 
 require('dotenv').config();
 
@@ -18,7 +19,7 @@ const JWT_SECRET = process.env.JWT_SECRET
 app.use(express.json())
 app.use(cors())
 
-
+app.use(express.static(path.join(__dirname,'../Public')));
 
 //for now i am using app only will shift to making proper routes in future
 
