@@ -10,6 +10,8 @@ require('dotenv').config();
 
 // router.use(Router.json())
 
+const Authmiddleware = require("../Authentication/auth")
+
 const {UserModel,JournalModel} = require("../Database/db")
 
 const JWT_SECRET = process.env.JWT_SECRET
@@ -106,6 +108,29 @@ router.post('/signin',async function(req,res){
 
 })
 
+
+//ab hum nya page to frontend se hi bhejte hai to request validate
+//krne ka ek trika hai ki pehle user jab frontend se hume call kregatab
+//hum ek /me endpoint se check krle token
+
+//par eventually jab hum uske baki journal access krenge tab bhi auth to hoga hi 
+//to ye step optional aur redundant hai
+
+
+router.get('/validate',Authmiddleware,function(req,res){
+  const username = req.username
+
+  //agr auth ne next call kiya mtlb thik hai iske baad redirect krdenge
+  //par vo fe se hoga to res bhjenge
+
+  if(username){
+    res.status(200).json({
+      message: "Verified"
+    })
+  }
+
+
+})
 
 //now these are get requests basically jab user signin krlega
 //to use dashboard wale page pe redirect krenge window.lo.href use krke

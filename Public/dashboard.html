@@ -51,7 +51,7 @@
             </div>
           </a>
 
-          <a class="history">
+          <a class="history" onclick="validate()">
             <div class="historyicon">
               <i class="fa-solid fa-folder"></i>
             </div>
@@ -168,5 +168,32 @@
       </div>
       </div>
     </div>
+
+    <script>
+      //ab userdashboard pe aa chuka hai to aate vkt humne usse token to diya hi hai ab har 
+      //subsequent request pe hum check krskte hai ki uska token valid hai ya nhi
+      //agr req shi hai to usko uss page ka html bhejdo
+
+      let url = "http://localhost:3000"
+      async function validate(){
+        try{
+          const response = await fetch(`${url}/validate`,{
+            method: "GET",
+            headers: {
+              "Content-Type": "application/json",
+              "authorization": localStorage.getItem("token")
+            }
+          })
+          const data = await response.json()
+
+          if(data.message === "Verified"){
+            window.location.href = "/Public/alljournals.html"
+          }
+        }
+        catch(e){
+
+        }
+      }
+    </script>
   </body>
 </html>
