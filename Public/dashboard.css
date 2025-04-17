@@ -688,8 +688,37 @@ font-size: 2rem;
   margin: 0 auto;
   margin-top: 2rem;
   background-color: #f4f4f4;
-  height: 10rem;
+  height: 13rem;
   width: 62rem;
   border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
 
+}
+
+.journaldescright{
+  margin: 0 auto;
+  background-color: #fff;
+  height: 10rem;
+  width: 37rem;
+  border-radius: 1rem;
+  /* margin-right: 7rem; */
+
+}
+
+.journaldescleft{
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+}
+
+.journaldescdate{
+  /* margin: 0 auto; */
+  background-color: #fff;
+  height: 3rem;
+  width: 15rem;
+  border-radius: 1rem;
 }

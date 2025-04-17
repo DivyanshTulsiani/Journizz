@@ -96,7 +96,19 @@
 
 
         <div class="alljournals" id="alljournals">
+          <div class="newjournal">
+            <div class="journaldescleft">
+              <div class="journaldescdate">
 
+              </div>
+              <div class="">
+
+              </div>
+            </div>
+            <div class="journaldescright">
+
+            </div>
+          </div>
           
         </div>
       </div>
@@ -149,8 +161,24 @@
         console.log(currjournal)
 
         const newjournal = document.createElement("div")
-        newjournal.innerHTML = currjournal.description
-        newjournal.className === "newjournal"
+        // newjournal.innerHTML = currjournal.description
+        newjournal.className = "newjournal"
+
+        const rightjournal = document.createElement("div")
+        rightjournal.className = "journaldescright"
+
+        const leftjournal = document.createElement("div")
+        leftjournal.className = "journaldescleft"
+
+        const leftjournaldate = document.createElement("div")
+        leftjournaldate.className = "journaldescdate"
+
+        leftjournal.append(leftjournaldate)
+
+        newjournal.append(leftjournal)
+        newjournal.append(rightjournal)
+
+
 
 
         return newjournal
