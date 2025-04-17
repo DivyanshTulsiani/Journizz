@@ -673,3 +673,23 @@ font-size: 2rem;
   cursor: pointer;
   color: darkgreen;
 }
+
+
+/* these classes our for render and state function so kept separate */
+
+
+.alljournals{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.newjournal{
+  margin: 0 auto;
+  margin-top: 2rem;
+  background-color: #f4f4f4;
+  height: 10rem;
+  width: 62rem;
+  border-radius: 1rem;
+
+}

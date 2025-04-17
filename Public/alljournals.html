@@ -95,7 +95,8 @@
         </div>
 
 
-        <div class="replaceall">
+        <div class="alljournals" id="alljournals">
+
           
         </div>
       </div>
@@ -108,16 +109,74 @@
     <script>
       //ab userdashboard pe aa chuka hai to aate vkt humne usse token to diya hi hai ab har 
       //subsequent request pe hum check krskte hai ki uska token valid hai ya nhi
-      let url = "http://localhost:3000/"
+
+      let journals = []
+
+      let url = "http://localhost:3000"
       async function alljournals(){
         try{
-          const response = await fetch("",{
-            method: "GET"
+          const response = await fetch(`${url}/getalljournals`,{
+            method: "GET",
+            headers: {
+              "Content-Type": "application/json",
+              "authorization": localStorage.getItem("token")
+            }
           })
+          if(response.ok){
+            const data = await response.json()
+            console.log(data)
+            journals = data.journals
+            console.log(journals[0])
+
+            //iske baad render function ko call krskte ho
+
+            render(journals);
+          }
         }
         catch(e){
 
         }
+      }
+
+      document.addEventListener("DOMContentLoaded", function() {
+        alljournals();
+      });
+
+      //
+
+      function createjournalcomponent(currjournal){
+
+        console.log(currjournal)
+
+        const newjournal = document.createElement("div")
+        newjournal.innerHTML = currjournal.description
+        newjournal.className === "newjournal"
+
+
+        return newjournal
+
+      }
+
+      //iske baad hmare pass journals array mai sare journals aajaenge to hum 
+      //do function bnaenge createjournalcomponent 
+      //aur dusra hoga render
+
+      //element.class name
+
+      function render(journals){
+        
+        console.log("Hi am render function")
+
+        const parent = document.getElementById("alljournals")
+        parent.innerHTML = ""
+
+        for(let i=0;i<journals.length;i++){
+          const element = createjournalcomponent(journals[i])
+
+          parent.appendChild(element)
+        }
+
+
       }
     </script>
   </body>
