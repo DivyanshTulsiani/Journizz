@@ -111,6 +111,10 @@
 
             window.location.href = "/Public/dashboard.html"
           }
+          else{
+            const data = await response.json()
+            alert(data.message)
+          }
 
         }
         catch(e){

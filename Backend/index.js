@@ -3,9 +3,12 @@ const jwt = require('jsonwebtoken')
 const mongoose = require('mongoose')
 const cors = require('cors')
 
+
 //imporrt the routes that u have created
 const userRoutes = require("./routes/users")
 const journalRoutes = require("./routes/journals")
+const geminiRoutes = require("./routes/gemini")
+
 const path = require('path')
 
 require('dotenv').config();
@@ -29,7 +32,7 @@ app.use(userRoutes)
 
 app.use(journalRoutes)
 
-
+app.use(geminiRoutes)
 
 
 
