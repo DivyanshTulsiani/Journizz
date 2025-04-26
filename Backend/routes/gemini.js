@@ -14,28 +14,32 @@ const Authmiddleware = require("../Authentication/auth")
 
 const GEMINI_KEY = process.env.GEMINI_KEY
 
-router.get('/getsuggestion',async function(req,res){
+router.post('/getsuggestion',async function(req,res){
 
+
+  let content = req.body.content
+  let suggestions = ""
 
   const ai = new GoogleGenAI({ apiKey: GEMINI_KEY });
 
   async function main() {
     const response = await ai.models.generateContent({
       model: "gemini-2.0-flash",
-      contents: "My day was fine i went on to a school trip with my school friends and we enjoyed a lot",
+      contents: `${content}`,
       config: {
         systemInstruction: "You are a helper and you have to improve the vocabulary and language for giving suggestions",
       },
     });
     console.log(response.text);
-    res.json({
-      suggestion: response.text
-    })
+    suggestions = response
   }
 
+   await main();
 
+  res.status(200).json({
+    content: suggestions.text
+  })
   
-  main();
 
 
 })

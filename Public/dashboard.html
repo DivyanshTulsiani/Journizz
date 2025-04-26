@@ -120,7 +120,7 @@
               </div>
 
               <div class="outerinputuserjournal">
-                </i><textarea placeholder="Write your Journal here.... ✏️" class="inputuserjournal"></textarea>
+                </i><textarea placeholder="Write your Journal here.... ✏️" class="inputuserjournal" id="userjournalinput"></textarea>
               </div>
 
               <div class="userjournalbottom">
@@ -148,11 +148,11 @@
               ✨ Gemini 
               </div>
             </div>
-          </i><textarea placeholder="Get your AI powered suggestions here....." class="geminimain"></textarea>
+          </i><textarea placeholder="Get your AI powered suggestions here....." class="geminimain" id="putsuggestion"></textarea>
 
            <div class="geminibottom">
             <div class="replace">
-              <a class="replacebutton"><i class="fa-solid fa-repeat"></i></a>
+              <a class="replacebutton" onclick="getsuggestions()"><i class="fa-solid fa-repeat"></i></a>
             </div>
 
             <div class="improvemore">
@@ -183,6 +183,7 @@
               "Content-Type": "application/json",
               "authorization": localStorage.getItem("token")
             }
+
           })
           const data = await response.json()
 
@@ -192,6 +193,43 @@
         }
         catch(e){
 
+        }
+      }
+
+
+      //get suggestion function
+       let usercontent = "hello"
+
+      async function getsuggestions(){
+        let usercontentbox = document.getElementById("userjournalinput")
+
+        let putsuggestion = document.getElementById("putsuggestion")
+
+        //mai soch rha tha in get elemnt pe bhi await kyu nhi lgate par ye to sync operations hai na inhe background mai thodi krenge 
+        usercontent = usercontentbox.value
+
+        try{
+          const response = await fetch(`${url}/getsuggestion`,{
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+              content: usercontent
+            })
+          })
+          //yha pe await lgana bhul gya tha ye toh ek async procees hai to await lgao 
+          const data = await response.json()
+          console.log(data)
+
+          let suggestion = data.content
+          console.log(suggestion)
+          putsuggestion.value = suggestion
+
+        }
+        catch(e){
+          console.log("Some error occures")
+          console.log(e.message)
         }
       }
     </script>
