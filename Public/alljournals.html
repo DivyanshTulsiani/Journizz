@@ -34,7 +34,7 @@
         </div>
 
         <div class="sidebaroptions">
-          <a class="home" href="extra.html">
+          <a class="home" onclick="backtohome()">
             <div class="homeicon">
               <i class="fa-solid fa-house"></i> 
             </div>
@@ -125,6 +125,7 @@
       //subsequent request pe hum check krskte hai ki uska token valid hai ya nhi
 
 
+
       let journals = []
 
       let url = "http://localhost:3000"
@@ -135,7 +136,8 @@
             headers: {
               "Content-Type": "application/json",
               "authorization": localStorage.getItem("token")
-            }
+            },
+   
           })
           if(response.ok){
             const data = await response.json()
@@ -149,12 +151,15 @@
           }
         }
         catch(e){
-
+          console.log(e);
+          
         }
       }
 
-      document.addEventListener("DOMContentLoaded", function() {
-        alljournals();
+      document.addEventListener("DOMContentLoaded",async function() {
+        console.log('loaded');
+        
+        await alljournals();
       });
 
       //
@@ -181,6 +186,9 @@
         leftjournaldatepart.innerHTML = "<i class='fa-solid fa-calendar-week'></i>"
         leftjournaldatepart.className = "leftjournaldatepart"
         leftjournaldate.append(leftjournaldatepart)
+
+        const leftjournaldatepart2 = document.createElement("div")
+        leftjournaldatepart2.innerHTML = currjournal.description   
 
 
         leftjournal.append(leftjournaldate)
@@ -214,6 +222,30 @@
           parent.appendChild(element)
         }
 
+      }
+
+      async function backtohome() {
+
+        try{
+
+          const response = await fetch(`${url}/validate`,{
+            method: "GET",
+            headers: {
+              "Content-type": "application/json",
+              "authorization": localStorage.getItem("token")
+            }
+          })
+
+          const data = await response.json()
+
+          if(data.message === "Verified"){
+            window.location.href = "/Public/dashboard.html"
+          }
+        }
+        catch(e){
+
+        }
+        
       }
     </script>
   </body>

@@ -115,7 +115,7 @@
                   <span class="journaldesc">New Journal</span> 
                 </div>
                 <div class="Addjournalbutton1outer">
-                  <button class="Addjournalbutton1"><span class="plusicon">+</span>Add Journal</button>
+                  <button class="Addjournalbutton1" onclick="addjournal()"><span class="plusicon">+</span>Add Journal</button>
                 </div>
               </div>
 
@@ -241,6 +241,36 @@
         window.location.href = "/Public/login.html"
 
         
+      }
+
+      async function addjournal() {
+
+        const description = document.getElementById("userjournalinput").value
+        let today = new Date();
+        let dd = String(today.getDate()).padStart(2, '0');
+        let mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+        let yyyy = today.getFullYear();
+
+        let todaydate = mm + '/' + dd + '/' + yyyy;
+        
+        try{
+          const response = await fetch(`${url}/addjournal`,{
+            method: "POST",
+            headers: {
+              "Content-type": "application/json",
+              "authorization": localStorage.getItem("token")              
+            },
+            body: JSON.stringify({
+              description: description,
+              bookamrk: false,
+              date: todaydate
+            })
+
+          })
+        }
+        catch{
+
+        }
       }
     </script>
   </body>
