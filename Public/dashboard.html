@@ -51,7 +51,7 @@
             </div>
           </a>
 
-          <a class="history" onclick="validate()">
+          <a class="history" onclick="validatetoalljournals()">
             <div class="historyicon">
               <i class="fa-solid fa-folder"></i>
             </div>
@@ -71,7 +71,7 @@
           </a>
         </div>
 
-        <div class="logout">
+        <a class="logout" onclick="logout()">
           <div class="logouticon">
             <i class="fa-solid fa-right-from-bracket"></i>
           </div>
@@ -79,7 +79,7 @@
           <div class="logoutname">
             Logout
           </div>
-        </div>
+        </a>
 
       </aside>
       
@@ -175,7 +175,7 @@
       //agr req shi hai to usko uss page ka html bhejdo
 
       let url = "http://localhost:3000"
-      async function validate(){
+      async function validatetoalljournals(){
         try{
           const response = await fetch(`${url}/validate`,{
             method: "GET",
@@ -231,6 +231,16 @@
           console.log("Some error occures")
           console.log(e.message)
         }
+      }
+
+      async function logout(){
+
+
+        localStorage.removeItem("token");
+
+        window.location.href = "/Public/login.html"
+
+        
       }
     </script>
   </body>

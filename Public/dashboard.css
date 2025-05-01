@@ -295,6 +295,12 @@ body{
   display: flex;
   align-items: center;
 
+
+}
+
+.logout:hover{
+  cursor: pointer;
+  background-color: #e7e7e7;
 }
 
 .logouticon{
