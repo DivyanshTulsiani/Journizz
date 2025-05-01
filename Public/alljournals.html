@@ -176,6 +176,13 @@
         const leftjournaldate = document.createElement("div")
         leftjournaldate.className = "journaldescdate"
 
+
+        const leftjournaldatepart = document.createElement("div")
+        leftjournaldatepart.innerHTML = "<i class='fa-solid fa-calendar-week'></i>"
+        leftjournaldatepart.className = "leftjournaldatepart"
+        leftjournaldate.append(leftjournaldatepart)
+
+
         leftjournal.append(leftjournaldate)
 
         newjournal.append(leftjournal)
