@@ -188,8 +188,16 @@
         leftjournaldate.append(leftjournaldatepart)
 
         const leftjournaldatepart2 = document.createElement("div")
-        leftjournaldatepart2.innerHTML = currjournal.description   
+        leftjournaldatepart2.className = "leftjournalpart2"
+        leftjournaldatepart2.innerHTML = currjournal.date
+        leftjournaldate.append(leftjournaldatepart2)
 
+
+        const usertext = document.createElement("TEXTAREA")
+        usertext.className = "usertext"
+        usertext.value = currjournal.description
+        rightjournal.append(usertext)
+        // rightjournal.innerHTML = currjournal.description
 
         leftjournal.append(leftjournaldate)
 

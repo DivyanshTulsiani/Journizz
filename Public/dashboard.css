@@ -746,3 +746,24 @@ font-size: 2rem;
   align-items: center;
   color: #4A90E2;
 }
+
+.leftjournalpart2{
+  font-size: 1.2rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+  color: black;
+  margin-right: 1rem;
+}
+
+.usertext{
+  margin: 0 auto;
+  /* margin-top: 1rem; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 0.5rem;
+  width: 15rem;
+  height: 12.5rem;
+
+}
