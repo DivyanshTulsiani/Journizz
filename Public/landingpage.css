@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  /* background-color: #fffdf9; */
+  /* background-color: #FAF9FF; */
+  background-color: #efedf5;
+  /* background-color: aliceblue; */
+}
+
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+    border-bottom: 1.8px solid rgb(238, 219, 219);
+    background-color: #ffffff;
+
+}
+
+.iconlogo{
+  font-family: Inter, sans-serif;
+  /* font-family: 'Inter', 'Helvetica Neue', 'Segoe UI', sans-serif; */
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 2rem;
+  background-color: #ff4f00;
+  font-size: 2rem;
+  border-radius: 0.2rem;
+  color: aliceblue;
+  /* color: #a8d7ff; */
+  font-weight: 900;
+  margin-right: 0.3rem;
+  margin-left: 2rem;
+}
+
+.logo{
+  /* width: 300px; */
+  height: 4rem;
+  /* border-bottom: 1.8px solid rgb(238, 219, 219); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* font-family: 'Inter', 'Helvetica Neue', 'Segoe UI', sans-serif; */
+
+  /* box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05); */
+}
+
+.logoin{
+  color: black;
+  font-weight: 700;
+  font-size: 1.7rem;
+  /* font-family: Roboto, sans-serif; */
+  /* font-family: Inter, sans-serif; */
+  font-family: 'Inter', 'Helvetica Neue', 'Segoe UI', sans-serif;
+
+}
+
+.loginbutton{
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.login{
+  font-family: 'Inter', 'Helvetica Neue', 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  font-weight: 450;
+  letter-spacing: -0.75px;
+  color: #ffffff;
+  padding: .4rem 1.5rem;
+  background-color: #ff4f00;
+  border: none;
+  border-radius: 0.5rem;
+  border: 1px solid #ff4f00
+  margin-right: 2rem;  margin-right: 2rem;
+}
+
+
+.loginlogo{
+  padding-right: 0.4rem;
+  font-size: 0.9rem;
+}
+
+
+.taglineouter{
+  display: flex;
+  justify-content: center;
+}
+.tagline{
+  /* display: flex; */
+  justify-content: center;
+  font-family: 'Inter',sans-serif;
+  /* font-family: 'Inter', 'Helvetica Neue', 'Segoe UI', sans-serif; */
+  margin-top: 9rem;
+  font-size: 2.8rem;
+  font-weight: 600;
+  max-width: 990px;
+  align-content: center;
+  color: #000000;
+  text-align: center;
+
+  /* width: 50%; */
+}
+
+.thoughtsimgouter{
+  display: flex;
+  justify-content: center;
+  /* margin-top: 2rem; */
+}
+.thoughtsimg{
+  font-size: 1rem;
+  height: 3rem;
+  width: auto;
+
+
+}
