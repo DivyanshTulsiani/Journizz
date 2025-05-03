@@ -24,7 +24,7 @@
             <div class="name" id="name2">
               Div
             </div>
-            <div class="username1">
+            <div class="username1" id="username">
               @Div123
             </div>
           </div>
@@ -32,7 +32,7 @@
         </div>
 
         <div class="sidebaroptions">
-          <a class="home" href="extra.html">
+          <a class="home" href="dashboard.html">
             <div class="homeicon">
               <i class="fa-solid fa-house"></i> 
             </div>
@@ -101,8 +101,11 @@
           <div class="time">
 
           </div>
-          <div class="greeting" id="greeting">
+          <div class="greeting" >
             Welcome back! Whats coming on the Journal today?
+          </div>
+          <div class="greeting" id="greetingtime">
+            h
           </div>
         </div>
 
@@ -179,6 +182,7 @@
       document.addEventListener("DOMContentLoaded",getname())
 
       async function getname() {
+
         try{
           const response = await fetch(`${url}/getname`,{
             method: "GET",
@@ -189,12 +193,32 @@
 
           })
 
+        let today = new Date();
+        let dd = String(today.getDate()).padStart(2, '0');
+        let mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+        let hours = String(today.getHours());
+        let minute = String(today.getMinutes());
+        let yyyy = today.getFullYear();
           const data = await response.json()
 
+          let todaydate = dd + '/' + mm + '/' + yyyy;
+          let timenow = hours + ":" + minute;
+
+          console.log(timenow);
+          
           const name = document.getElementById("name")
           const name2 = document.getElementById("name2")
           name.innerHTML = data.name + "!"
           name2.innerHTML = data.name
+
+          const username = document.getElementById("username")
+          username.innerHTML = data.username
+
+          const time = document.getElementById("greetingtime")
+          console.log(timenow)
+          console.log(todaydate);
+          
+          time.innerHTML = timenow
           
         }
         catch(e){
@@ -280,7 +304,7 @@
         let mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
         let yyyy = today.getFullYear();
 
-        let todaydate = mm + '/' + dd + '/' + yyyy;
+        let todaydate = dd + '/' + mm + '/' + yyyy;
         
         try{
           const response = await fetch(`${url}/addjournal`,{
