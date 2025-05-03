@@ -21,7 +21,7 @@
             <img src="UserImages/sheldon2.jpeg" class="userimage"> 
           </div>
           <div class="username">
-            <div class="name">
+            <div class="name" id="name2">
               Div
             </div>
             <div class="username1">
@@ -95,13 +95,13 @@
         </div>
       <div class="replaceall">
         <div class="dashboardgreeting">
-          <div class="dash">
-            Hi Div!
+          <div class="dash" >
+            Hi <span id="name">Div!</span>
           </div>
           <div class="time">
 
           </div>
-          <div class="greeting">
+          <div class="greeting" id="greeting">
             Welcome back! Whats coming on the Journal today?
           </div>
         </div>
@@ -175,6 +175,34 @@
       //agr req shi hai to usko uss page ka html bhejdo
 
       let url = "http://localhost:3000"
+
+      document.addEventListener("DOMContentLoaded",getname())
+
+      async function getname() {
+        try{
+          const response = await fetch(`${url}/getname`,{
+            method: "GET",
+            headers: {
+              "Content-Type": "application/json",
+              "authorization": localStorage.getItem("token")
+            }
+
+          })
+
+          const data = await response.json()
+
+          const name = document.getElementById("name")
+          const name2 = document.getElementById("name2")
+          name.innerHTML = data.name + "!"
+          name2.innerHTML = data.name
+          
+        }
+        catch(e){
+
+        }
+        
+      }
+
       async function validatetoalljournals(){
         try{
           const response = await fetch(`${url}/validate`,{
@@ -192,7 +220,8 @@
           }
         }
         catch(e){
-
+          alert("Could not process your journals")
+          console.log(e)
         }
       }
 

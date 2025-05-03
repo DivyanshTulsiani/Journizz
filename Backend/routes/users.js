@@ -143,7 +143,21 @@ router.get('/dashboard',function(req,res){
   
 })
 
+router.get('/getname',Authmiddleware,async function(req,res){
 
+  const username = req.username
+
+  let user = await UserModel.findOne({
+    username: username
+  })
+
+  if(user){
+    res.json({
+      name: user.name,
+      username: username
+    })
+  }
+})
 
 
 
