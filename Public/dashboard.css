@@ -69,24 +69,25 @@ body{
   margin: 0 auto;
   margin-top: 2rem;
   display: flex;
-  flex-direction: column;
+
+  justify-content: center;
   align-items: center;
   background-color: #f4f4f4;
-  height: 5rem;
+  height: 4rem;
   width: 13rem;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
 
 }
 
 .profiletop{
   display: flex;
   justify-content: space-between;
-  margin-top: 1rem;
+
   align-items: center;
   height: 3rem;
-  width: 11rem;
+  width: 12rem;
   background-color: #fff;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
 }
 
 
@@ -143,12 +144,12 @@ body{
   margin-top: 2.5rem;
   height: 2.5rem;
   width: 13rem;
-  border-radius: 1rem;
+  border-radius: 0.6rem;
   background-color: #f4f4f4;
   display: flex;
   /* justify-content: space-between; */
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 450;
 
 }
 
@@ -163,7 +164,7 @@ body{
   align-items: center;
   margin-left: 1rem;
   font-size: 1.2rem;
-  color: green;
+  color: #1070ff;
 }
 
 .homename{
@@ -182,12 +183,12 @@ body{
   margin-top: 0.5rem;
   height: 2.5rem;
   width: 13rem;
-  border-radius: 1rem;
+  border-radius: 0.6rem;
   background-color: #f4f4f4;
   display: flex;
   /* justify-content: space-between; */
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 450;
 }
 .calendar:hover{
   cursor: pointer;
@@ -217,12 +218,12 @@ body{
   margin-top: 0.5rem;
   height: 2.5rem;
   width: 13rem;
-  border-radius: 1rem;
+  border-radius: 0.6rem;
   background-color: #f4f4f4;
   display: flex;
   /* justify-content: space-between; */
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 450;
 }
 
 .history:hover{
@@ -252,12 +253,12 @@ body{
   margin-top: 0.5rem;
   height: 2.5rem;
   width: 13rem;
-  border-radius: 1rem;
+  border-radius: 0.6rem;
   background-color: #f4f4f4;
   display: flex;
   /* justify-content: space-between; */
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 450;
 }
 
 .reminder:hover{
@@ -345,7 +346,44 @@ body{
 }
 
 .twitterbutton1{
-  
+  font-size: 0.9rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-right: 1rem;
+  border-radius: 0.5rem;
+  /* border: 0.5px solid black; */
+  border: none;
+  color: white;
+  font-weight: 600;
+  background-color: #ff4f00;
+}
+
+.githubbutton1{
+  font-size: 0.9rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  color: black;
+  font-weight: 600;
+  border: 0.8px solid black;
+  background-color: white;
+
+
+}
+
+.githublogo{
+  color: black;
+  padding-right: 0.2rem;
+}
+
+.twitterlogo{
+
+  padding-right: 0.2rem;
 }
 
 
