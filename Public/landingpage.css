@@ -102,10 +102,13 @@ body{
 .tagline{
   /* display: flex; */
   justify-content: center;
+  /* font-family: 'Poppins', sans-serif;
+  letter-spacing: -1px; */
+
   font-family: 'Inter',sans-serif;
   /* font-family: 'Inter', 'Helvetica Neue', 'Segoe UI', sans-serif; */
-  margin-top: 9rem;
-  font-size: 2.8rem;
+  margin-top: 7rem;
+  font-size: 3rem;
   font-weight: 600;
   max-width: 990px;
   align-content: center;
@@ -115,6 +118,29 @@ body{
   /* width: 50%; */
 }
 
+
+.tagline2{
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  color: #484747;
+  font-weight: 350;
+
+}
+
+.gemini{
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0.2rem;
+  background: linear-gradient(90deg, #4A90E2, #BC3CD8, #FF5C93);
+  background-clip: text;
+-webkit-background-clip: text;
+color: transparent;
+-webkit-text-fill-color: transparent;
+}
 .thoughtsimgouter{
   display: flex;
   justify-content: center;
@@ -134,4 +160,41 @@ body{
 
 .cameraicon{
   color: blue;
+}
+
+
+.container {
+  margin-top: 1rem;
+  display: inline-flex;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.btn1 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 32px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  /* font-family: 'Poppins', sans-serif; */
+  /* font-family: 'Inter',sans-serif; */
+  font-family: Arial, sans-serif;
+  position: relative;
+  background: linear-gradient(to bottom, #ff8d4c, #ff5a10);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.4);
+  border-radius: 9999px;
+
+  transition: all 0.2s ease-in-out;
+  border: none;
+  min-width: 200px;
+  text-align: center;
+}
+
+.btn1:hover {
+  background: linear-gradient(to bottom, #ff7f32, #ff4f00);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); 
 }
