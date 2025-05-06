@@ -291,3 +291,78 @@ color: transparent;
   right: 10%;
   animation: floatUpDown 3s ease-in-out infinite;
 }
+
+
+.features{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.featurestagline{
+  margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    /* font-family: 'Poppins', sans-serif;
+    letter-spacing: -1px; */
+  
+    font-family: 'Inter',sans-serif;
+    /* font-family: 'Inter', 'Helvetica Neue', 'Segoe UI', sans-serif; */
+    margin-top: 7rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+    max-width: 990px;
+    align-content: center;
+    color: #000000;
+    text-align: center;
+}
+
+.featuresicon1{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  margin-top: 4rem;
+}
+
+.emailicon{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 0.7rem;
+  border: 1px solid rgb(232, 232, 232);
+  transition: transform 0.4s linear;
+  width: 320px;
+  background-color: #fff;
+
+}
+
+.imgouter{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.7rem;
+}
+
+.emailimg{
+  height: 2.5rem;
+  width: auto;
+}
+
+.emailcontext{
+  font-family: 'Inter', sans-serif;
+  max-width: 18rem;
+  text-align: center;
+  color: #666666;
+  font-size: 0.7rem;
+}
+
+.headline{
+  color: #333333;
+  font-size: 1.3rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  margin: 0 auto;
+}
+
+.emailicon:hover{
+  widt;
+}
