@@ -331,7 +331,7 @@ color: transparent;
   border-radius: 0.7rem;
   border: 1px solid rgb(232, 232, 232);
   transition: transform 0.4s linear;
-  width: 320px;
+  width: 280px;
   background-color: #fff;
 
 }
@@ -364,5 +364,38 @@ color: transparent;
 }
 
 .emailicon:hover{
-  widt;
+  transform: translateY(-7px);
+}
+
+
+.calendaricon{
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 0.7rem;
+  border: 1px solid rgb(232, 232, 232);
+  transition: transform 0.4s linear;
+  width: 280px;
+  background-color: #fff;
+}
+
+.calendaricon:hover{
+  transform: translateY(-7px);
+}
+
+.mobileicon{
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 0.7rem;
+  border: 1px solid rgb(232, 232, 232);
+  transition: transform 0.4s linear;
+  width: 280px;
+  background-color: #fff;
+}
+
+.mobileicon:hover{
+  transform: translateY(-7px);
 }
