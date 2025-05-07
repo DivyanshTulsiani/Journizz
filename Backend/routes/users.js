@@ -16,6 +16,12 @@ const {UserModel,JournalModel} = require("../Database/db")
 
 const JWT_SECRET = process.env.JWT_SECRET
 
+
+router.post('/health',async function (req,res) {
+  res.status(200).send("It is healthy")
+  
+})
+
 router.post('/signup',async function(req,res){
 
   if(req.body.username && req.body.name && req.body.email && req.body.password){
