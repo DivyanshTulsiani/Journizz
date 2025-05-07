@@ -222,7 +222,8 @@
           
         }
         catch(e){
-
+          console.log("Internal server error");
+          alert("Some error occured");
         }
         
       }
@@ -240,7 +241,7 @@
           const data = await response.json()
 
           if(data.message === "Verified"){
-            window.location.href = "/Public/alljournals.html"
+            window.location.href = "/alljournals.html"
           }
         }
         catch(e){
@@ -291,7 +292,7 @@
 
         localStorage.removeItem("token");
 
-        window.location.href = "/Public/login.html"
+        window.location.href = "/login.html"
 
         
       }
@@ -321,7 +322,7 @@
 
           })
         }
-        catch{
+        catch(e){
 
         }
       }
