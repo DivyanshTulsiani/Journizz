@@ -74,6 +74,12 @@ body{
   display: flex;
   /* justify-content: center; */
   align-items: center;
+  
+}
+
+.login:hover{
+  background-color: #df4a05;
+  cursor: pointer;
 }
 
 .login{
@@ -489,7 +495,7 @@ color: transparent;
 }
 
 .sideicons2{
-
+  margin-right: 2rem;
   display: flex;
   align-items: center;
 
