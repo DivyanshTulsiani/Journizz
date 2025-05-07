@@ -392,6 +392,17 @@ body{
   padding-right: 0.2rem;
 }
 
+.githubbutton1:hover{
+  background-color: #e1e1e1;
+  cursor: pointer;
+}
+
+.twitterbutton1:hover{
+  background-color: #cb4000;
+  cursor: pointer;
+}
+
+
 
 .dash{
   font-family: Inter, sans-serif;

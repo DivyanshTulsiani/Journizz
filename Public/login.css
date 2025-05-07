@@ -39,9 +39,83 @@ body{
   
 }
 
-/* .twitterbutton{
+.dispimg{
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 2px solid rgb(238, 219, 219);
+  overflow: hidden;
+  background-image: url("UserImages/v904-nunny-012.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.imgdashboard1{
+  border-radius: 1rem;
+  height: 22rem;
+  width: auto;
+}
+
+.twitterbutton{
   margin-left: 62rem;
-} */
+}
+
+.twitterbutton1{
+  font-size: 0.9rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-right: 1rem;
+  border-radius: 0.5rem;
+  /* border: 0.5px solid black; */
+  border: none;
+  color: white;
+  font-weight: 600;
+  background-color: #ff4f00;
+}
+
+.githubbutton1{
+  font-size: 0.9rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  color: black;
+  font-weight: 600;
+  border: 0.8px solid black;
+  background-color: white;
+
+
+}
+
+.githublogo{
+  color: black;
+  padding-right: 0.2rem;
+}
+
+.twitterlogo{
+
+  padding-right: 0.2rem;
+}
+
+.githubbutton1:hover{
+  background-color: #e1e1e1;
+  cursor: pointer;
+}
+
+.twitterbutton1:hover{
+  background-color: #cb4000;
+  cursor: pointer;
+}
+
+
+
 
 
 .iconlogo{
@@ -99,7 +173,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #F2F2F2;;
+  background-color: #ffffff;;
 }
 
 .login-container {
@@ -109,10 +183,10 @@ body{
   max-width: 420px;
   border-radius: 30px;
   padding: 40px 20px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   position: relative;
   overflow: hidden;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Inter', sans-serif;
 
 }
 .imagebelowlogin{
