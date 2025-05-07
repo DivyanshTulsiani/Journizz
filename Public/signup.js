@@ -21,6 +21,7 @@ async function signup() {
     })
     if(response.ok){
       alert("You are signed up")
+      window.location.href = "/Public/dashboard.html"
     }
     else{
       const data = await response.json()
