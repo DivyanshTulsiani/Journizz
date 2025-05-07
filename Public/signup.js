@@ -1,4 +1,4 @@
-let url = "http://localhost:3000"
+let url = "https://journizz.onrender.com"
 async function signup() {
   let username = document.getElementById("username").value
   let password = document.getElementById("password").value
