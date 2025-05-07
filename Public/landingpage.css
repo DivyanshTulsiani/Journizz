@@ -317,11 +317,24 @@ color: transparent;
     text-align: center;
 }
 
+
+.featuressubtagline{
+  margin: 0 auto;
+  /* display: flex; */
+  justify-content: center;
+  font-family: 'Inter',sans-serif;
+  font-size: 0.7rem;
+  color: #333333;
+  text-align: center;
+  margin-top: 1rem;
+  max-width: 700px;
+}
+
 .featuresicon1{
   margin: 0 auto;
   display: flex;
   flex-direction: row;
-  margin-top: 4rem;
+  margin-top: 2.5rem;
 }
 
 .emailicon{
@@ -398,4 +411,90 @@ color: transparent;
 
 .mobileicon:hover{
   transform: translateY(-7px);
+}
+
+.flaticon{
+  text-decoration: none;
+}
+
+.footer{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #000042;
+}
+
+.logoname{
+  display: flex;
+}
+
+.logofooter{
+  /* width: 300px; */
+  height: 2.8rem;
+  /* border-bottom: 1.8px solid rgb(238, 219, 219); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* font-family: 'Inter', 'Helvetica Neue', 'Segoe UI', sans-serif; */
+
+  /* box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05); */
+}
+
+.logoinfooter{
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-size: 1.7rem;
+  /* font-family: Roboto, sans-serif; */
+  /* font-family: Inter, sans-serif; */
+  font-family: 'Inter', 'Helvetica Neue', 'Segoe UI', sans-serif;
+
+}
+
+.iconlogofooter{
+  font-family: Inter, sans-serif;
+  /* font-family: 'Inter', 'Helvetica Neue', 'Segoe UI', sans-serif; */
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 2rem;
+  background-color: #ff4f00;
+  font-size: 2rem;
+  border-radius: 0.2rem;
+  color: aliceblue;
+  /* color: #a8d7ff; */
+  font-weight: 900;
+  margin-right: 0.3rem;
+  margin-left: 2rem;
+}
+
+
+.credentials{
+  display: flex;
+  align-items: center;
+  color: #A1A1A1;
+  font-family: 'Inter',sans-serif;
+  gap: 2px;
+  font-size: 0.9rem;
+}
+
+.imgheart{
+  align-items: center;
+}
+
+.myname{
+  color: #fff;
+  font-weight: 500;
+  margin-left: 0.5rem;
+}
+
+.sideicons2{
+
+  display: flex;
+  align-items: center;
+
+}
+.sideicons2 i{
+  color: gray;
+  padding-right: 5px;
 }
