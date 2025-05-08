@@ -17,7 +17,7 @@ const {UserModel,JournalModel} = require("../Database/db")
 const JWT_SECRET = process.env.JWT_SECRET
 
 
-router.post('/health',async function (req,res) {
+router.get('/health',async function (req,res) {
   res.status(200).send("It is healthy")
   
 })
