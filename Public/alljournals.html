@@ -73,15 +73,15 @@
           </a>
         </div>
 
-        <div class="logout">
+        <a class="logout" onclick="logout()">
           <div class="logouticon">
             <i class="fa-solid fa-right-from-bracket"></i>
           </div>
 
-          <div class="logoutname">
+          <div class="logoutname" onclick="">
             Logout
           </div>
-        </div>
+        </a>
 
       </aside>
       
@@ -124,7 +124,12 @@
       //ab userdashboard pe aa chuka hai to aate vkt humne usse token to diya hi hai ab har 
       //subsequent request pe hum check krskte hai ki uska token valid hai ya nhi
 
+      async function logout(){
 
+        localStorage.removeItem("token");
+        window.location.href = "/login.html"
+
+      }
 
       let journals = []
 
@@ -247,7 +252,7 @@
           const data = await response.json()
 
           if(data.message === "Verified"){
-            window.location.href = "/Public/dashboard.html"
+            window.location.href = "/dashboard.html"
           }
         }
         catch(e){
