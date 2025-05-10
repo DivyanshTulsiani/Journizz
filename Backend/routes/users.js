@@ -47,37 +47,42 @@ router.post('/signup',async function(req,res){
         })
       }
 
-      const email = req.body.email
-      const password = req.body.password
-      const name = req.body.name
-      const username = req.body.username
-      //hashing password from here
 
-    
-      try{
-        const hashedpassword = await bcrypt.hash(password,5)
-        await UserModel.create({
-          email: email,
-          password: hashedpassword,
-          name: name,
-          username: username
+      else{
+        const email = req.body.email
+        const password = req.body.password
+        const name = req.body.name
+        const username = req.body.username
+        //hashing password from here
+  
+      
+        try{
+          const hashedpassword = await bcrypt.hash(password,5)
+          await UserModel.create({
+            email: email,
+            password: hashedpassword,
+            name: name,
+            username: username
+          })
+        }
+        catch(e){
+          res.status(500).json({
+            message: "Internal server failed. Data was not saved",
+            error: e
+          })
+        }
+      
+      
+        res.status(200).json({
+          message: "You have signed up"
         })
       }
-      catch(err){
-        res.status(500).json({
-          message: "Internal server failed. Data was not saved",
-          error: err
-        })
-      }
-    
-    
-      res.status(200).json({
-        message: "You have signed up"
-      })
+
     }
 
     else{
-      alert("User already exists")
+      // alert("User already exists")
+      console.log(userfound)
 
       res.status(404).json({
         message: "User already exists"
@@ -86,7 +91,7 @@ router.post('/signup',async function(req,res){
 
   }
   else{
-    alert("Please provide all credentials")
+    // alert("Please provide all credentials")
 
     res.json({
       message: "Please provide all credentials"

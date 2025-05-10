@@ -1,5 +1,7 @@
 let url = "https://journizz.onrender.com"
 
+// let url = "http://localhost:3000"
+
 
 async function login() {
   username = document.getElementById("username").value
