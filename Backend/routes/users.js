@@ -33,7 +33,7 @@ router.post('/signup',async function(req,res){
 
     if(!userfound){
       const requiredBody = z.object({
-        email: z.string.min(5).max(100).email(),
+        email: z.string().min(5).max(100).email(),
         password: z.string().min(6).max(100),
         name: z.string().min(3).max(100),
         username: z.string().min(3).max(100)
