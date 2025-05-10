@@ -5,6 +5,8 @@ const jwt = require('jsonwebtoken')
 const mongoose = require('mongoose')
 const cors = require('cors')
 const path = require('path')
+const bcrypt = require('bcrypt')
+const { z } = require('zod')
 
 require('dotenv').config();
 
@@ -30,21 +32,39 @@ router.post('/signup',async function(req,res){
     let userfound = await UserModel.findOne({username: newusername})
 
     if(!userfound){
+      const requiredBody = z.object({
+        email: z.string.min(5).max(100).email(),
+        password: z.string().min(6).max(100),
+        name: z.string().min(3).max(100),
+        username: z.string().min(3).max(100)
+      })
+
+      const parsedDataSuccess = requiredBody.safeParse(req.body)
+      if(!parsedDataSuccess.success){
+        res.json({
+          message: "Incorrect format",
+          error: parsedDataSuccess.error
+        })
+      }
+
       const email = req.body.email
       const password = req.body.password
       const name = req.body.name
       const username = req.body.username
+      //hashing password from here
+
     
       try{
+        const hashedpassword = await bcrypt.hash(password,5)
         await UserModel.create({
           email: email,
-          password: password,
+          password: hashedpassword,
           name: name,
           username: username
         })
       }
       catch(err){
-        return res.status(500).json({
+        res.status(500).json({
           message: "Internal server failed. Data was not saved",
           error: err
         })
@@ -57,7 +77,7 @@ router.post('/signup',async function(req,res){
     }
 
     else{
-      // alert("User already exists")
+      alert("User already exists")
 
       res.status(404).json({
         message: "User already exists"
@@ -82,26 +102,37 @@ router.post('/signin',async function(req,res){
   const password = req.body.password
 
   if(username && password){
-    let founduser = await UserModel.findOne({
-      username: username
-    })
-  
-    if(founduser && founduser.password === password){
-      const token = jwt.sign({
+    try{
+      let founduser = await UserModel.findOne({
         username: username
-      },JWT_SECRET)
-  
-      res.status(200).json({
-        message: "Succesfully signed in",
-        token: token
       })
+      if(!founduser){
+        res.status(404).json({
+          message: "User does not exist"
+        })
+      }
+      const passwordmatch = await bcrypt.compare(password,founduser.password)
+      if(founduser && passwordmatch){
+        const token = jwt.sign({
+          username: username
+        },JWT_SECRET)
+    
+        res.status(200).json({
+          message: "Succesfully signed in",
+          token: token
+        })
+      }
+  
+      else{
+        res.status(404).json({
+          message: "Wrong username or password"
+        })
+      }
+    }
+    catch(e){
+
     }
 
-    else{
-      res.status(404).json({
-        message: "Wrong username or password"
-      })
-    }
   }
 
   else{

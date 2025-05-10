@@ -2,7 +2,8 @@ const express = require('express')
 const jwt = require('jsonwebtoken')
 const mongoose = require('mongoose')
 const cors = require('cors')
-
+// const bcrypt = require('bcrypt')
+// const { z } = require('zod')
 
 //imporrt the routes that u have created
 const userRoutes = require("./routes/users")
