@@ -632,7 +632,7 @@ color: transparent;
 @media only screen and (max-width: 446px){
 
   .tagline{
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 
   .tagline2{
@@ -666,6 +666,11 @@ color: transparent;
 
   @media only screen and (max-width: 488px){
 
+    .featurestagline{
+      margin-top: 4rem;
+      font-size: 1.4rem;
+    }
+
     .footer{
       padding: 0.4rem;
     }
@@ -694,6 +699,39 @@ color: transparent;
   @media only screen and (max-width: 424px){
 
 
+
+      .iconlogo{
+        font-size: 1.5rem;
+        width: 1.5rem;
+        margin-left: 1rem;
+      }
+
+      .logoin{
+        font-size: 1.4rem;
+      }
+
+      .login{
+        font-size: 0.7rem;
+        margin-right: 1rem;
+      }
+
+      .loginlogo{
+        padding-right: 0.4rem;
+        font-size: 0.7rem;
+      }
+
+    .floatingicon{
+
+    }
+
+    .iconbook{
+      height: 2rem;
+    }
+    .iconpen{
+      height: 2rem;
+    } 
+
+
     .imgdashboard{
       border-radius: 1rem;
       padding: 0.6rem;
@@ -701,7 +739,7 @@ color: transparent;
 
     .featurestagline{
       margin-top: 3rem;
-      font-size: 1.6rem;
+      font-size: 1.4rem;
     }
 
     .footer{

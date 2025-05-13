@@ -60,7 +60,7 @@ body{
 }
 
 .twitterbutton{
-  margin-left: 62rem;
+  /* margin-left: 62rem; */
 }
 
 .twitterbutton1{
@@ -341,4 +341,86 @@ h1 {
 .toggle-password {
   cursor: pointer;
   color: #aab0bc;
+}
+
+
+@media only screen and (max-width: 1400px){
+
+  .imgdashboard1{
+    height: 19rem;
+  }
+
+}
+
+@media only screen and (max-width: 1204px){
+
+  .imgdashboard1{
+    height: 16rem;
+  }
+
+}
+
+@media only screen and (max-width: 950px){
+
+  .dispimg{
+    display: none;
+  }
+
+  .rightside{
+    width: 100%;
+  }
+  .login-container{
+    max-width: 590px;
+  }
+
+}
+
+@media only screen and (max-width: 627px){
+
+
+  .login-container{
+    max-width: 490px;
+  }
+
+}
+
+@media only screen and (max-width: 523px){
+
+  .logo{
+    margin-left: 2rem;
+  }
+  .rightnav{
+    margin-right: 2rem;
+  }
+
+  .login-container{
+    max-width: 400px;
+  }
+
+}
+
+@media only screen and (max-width: 391px){
+
+  .logo{
+    margin-left: 1rem;
+  }
+  .logoin{
+    font-size: 1.4rem;
+  }
+  .rightnav{
+    margin-right: 1rem;
+  }
+
+  .login-container{
+    max-width: 320px;
+  }
+
+  .twitterbutton1{
+    font-size: 0.6rem;
+  }
+
+  .githubbutton1{
+    font-size: 0.6rem;
+  }
+
 }
