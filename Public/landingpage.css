@@ -137,6 +137,7 @@ body{
   font-family: 'Poppins', sans-serif;
   color: #484747;
   font-weight: 400;
+  font-size: 16px;
 
 }
 
@@ -214,7 +215,7 @@ color: transparent;
 .dashboardimg{
   margin-top: 7rem;
   width: 100%;
-  height: 40rem;
+  /* height: 40rem; */
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -239,17 +240,19 @@ color: transparent;
   border-radius: 0.8rem;
   width: 80%;
   height: auto;
-    box-shadow: 0 15px 50px 0 rgba(0, 0, 0, .35);
-    /* background: #efedf5;
-  backdrop-filter: 50%; */
-  border: 16px solid rgba(255, 255, 255, 0.4);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 15px 50px 0px;
+  padding: 0.9rem;
+  backdrop-filter: blur(32px);
+  /* border: 2px solid rgba(255, 255, 255, 0.4);*/
 }
 
 .imgdashboard1{
   border-radius: 1rem;
   width: 100%;
   height: auto;
-    box-shadow: 0 15px 50px 0 rgba(0, 0, 0, .35);
+  box-shadow: 0 15px 50px 0 rgba(0, 0, 0, .35);
+  /* background: rgba(255, 255, 255, 0.4); */
+  /* padding: 1rem; */
 
 }
 
@@ -504,3 +507,223 @@ color: transparent;
   color: gray;
   padding-right: 5px;
 }
+
+@media only screen and (max-width: 910px){
+  .emailicon{
+    width: 230px;
+  }
+  .calendaricon{
+    width: 230px;
+  }
+  .mobileicon{
+    width: 230px;
+  }
+}
+
+@media only screen and (max-width: 755px){
+  .emailicon{
+    width: 200px;
+  }
+  .calendaricon{
+    width: 200px;
+  }
+  .mobileicon{
+    width: 200px;
+  }
+
+  .emailcontext{
+    font-size: 0.5rem;
+  }
+  .tagline2{
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 670px){
+
+
+  .featuresicon1{
+    flex-direction: column;
+  }
+
+  .emailicon{
+    width: 230px;
+  }
+  .emailcontext{
+    font-size: 0.7rem;
+  }
+  .calendaricon{
+    width: 230px;
+    margin-left: 0rem;
+    margin-top: 1rem;
+  }
+  .mobileicon{
+    width: 230px;
+    margin-left: 0rem;
+    margin-top: 1rem;
+  }
+
+  /* .featuressubtagline{
+    content: 'hi';
+    text: 'hi';
+  } */
+
+}
+
+
+@media only screen and (max-width: 610px){
+
+  .credentials{
+    font-size: 0.7rem;
+  }
+
+  .iconlogofooter{
+    width: 1.5rem;
+    font-size: 1.5rem;
+  }
+  .logoinfooter{
+    font-size: 1.4rem;
+  }
+
+
+}
+
+
+
+@media only screen and (max-width: 615px){
+
+  .tagline{
+    font-size: 2.5rem;
+  }
+
+  .tagline2{
+    font-size: 12px;
+  }
+
+
+}
+
+@media only screen and (max-width: 530px){
+
+  .tagline{
+    font-size: 2.1rem;
+  }
+
+  .tagline2{
+    font-size: 11px;
+  }
+
+
+}
+
+@media only screen and (max-width: 480px){
+
+  .tagline{
+    font-size: 1.9rem;
+  }
+
+  .tagline2{
+    font-size: 10px;
+  }
+
+
+}
+
+@media only screen and (max-width: 446px){
+
+  .tagline{
+    font-size: 1.6rem;
+  }
+
+  .tagline2{
+    font-size: 8px;
+  }
+
+
+}
+
+
+@media only screen and (max-width: 520px){
+
+  .footer{
+    padding: 0.4rem;
+  }
+
+  .credentials{
+    font-size: 0.7rem;
+  }
+
+  .iconlogofooter{
+    width: 1.3rem;
+    font-size: 1.3rem;
+  }
+  .logoinfooter{
+    font-size: 1.2rem;
+  }
+
+}
+  
+
+  @media only screen and (max-width: 488px){
+
+    .footer{
+      padding: 0.4rem;
+    }
+  
+    .credentials{
+      font-size: 0.65rem;
+    }
+  
+    .iconlogofooter{
+      width: 1.1rem;
+      font-size: 1.1rem;
+    }
+    .logoinfooter{
+      font-size: 1rem;
+    }
+    .sideicons2{
+      margin-right: 1rem;
+    }
+    .iconlogofooter{
+      margin-left: 1rem;
+    }
+  }
+
+
+
+  @media only screen and (max-width: 424px){
+
+
+    .imgdashboard{
+      border-radius: 1rem;
+      padding: 0.6rem;
+    }
+
+    .featurestagline{
+      margin-top: 3rem;
+      font-size: 1.6rem;
+    }
+
+    .footer{
+      padding: 0.3rem;
+    }
+  
+    .credentials{
+      font-size: 0.55rem;
+    }
+  
+    .iconlogofooter{
+      width: 1rem;
+      font-size: 1rem;
+    }
+    .logoinfooter{
+      font-size: 0.9rem;
+    }
+    .sideicons2{
+      margin-right: 0.5rem;
+      font-size: 0.8rem;
+    }
+    .iconlogofooter{
+      margin-left: 0.5rem;
+    }
+  }
