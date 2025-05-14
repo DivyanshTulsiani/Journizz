@@ -23,10 +23,11 @@ body{
 
 .sidebar{
   width: 300px;
-  height: 100vh;
+  /* height: 100vh; */
   /* height: 500px; */
   border-right: 1.8px solid rgb(238, 219, 219);
   background-color: #f5f5f5;
+  /* position: absolute; */
   /* position: fixed; */
   /* box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05); */
 }
@@ -55,8 +56,13 @@ body{
   justify-content: center;
   align-items: center;
   background-color: #fffdf9;
+  margin-left: 2rem;
 
   /* box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05); */
+}
+
+.rightoflogo{
+  display: flex;
 }
 
 .logoin{
@@ -111,7 +117,7 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-right: 4.5rem;
+  margin-right: 0.5rem;
 }
 .name{
   display: flex;
@@ -142,6 +148,10 @@ body{
   align-items: center;
   flex-direction: column;
 }
+
+/* .sidebarhide{
+
+} */
 
 .home{
   margin-top: 2.5rem;
@@ -344,12 +354,23 @@ body{
   /* justify-content: center; */
   align-items: center;
   background-color: #fffdf9;
+  justify-content: space-between;
   
 }
 
 .twitterbutton{
-  margin-left: 62rem;
+  /* margin-left: 62rem; */
 }
+
+.collapsesidebar{
+  margin-right: 1rem;
+  /* display: none; */
+}
+
+.collapsesidebar2{
+  padding: 1rem 0.5rem 0.5rem 1rem;
+  /* display: none;*/
+} 
 
 .twitterbutton1{
   font-size: 0.9rem;
@@ -378,6 +399,7 @@ body{
   font-weight: 600;
   border: 0.8px solid black;
   background-color: white;
+  margin-right: 2rem;
 
 
 }
@@ -412,6 +434,19 @@ body{
   
   padding: 0.5rem;
   padding-bottom: 0rem;
+}
+
+
+.dashboardgreeting{
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;
+  justify-content: center; */
+}
+
+.replaceall{
+  display: flex;
+  flex-direction: column;
 }
 
 .greeting{
@@ -825,3 +860,398 @@ font-size: 2rem;
   height: 12.5rem;
 
 }
+
+
+.collapse20{
+  width: 0;
+  display: none;
+}
+
+.collapse10{
+  display: block;
+  position: absolute;
+
+}
+
+
+@media only screen and (max-width: 1210px){
+    .userjournal{
+      height: 30rem;
+      width: 24rem;
+      background-color: #f4f4f4;
+      border: 1px solid #ff4f00;
+      /* border: 0px solid #ff4f00; */
+      border-radius: 1rem;
+      margin-left: 2rem;
+      margin-top: 2rem;
+      display: flex;
+      /* justify-content: center; */
+      flex-direction: column;
+  }
+
+  .userjournaltop {
+    margin: 0 auto;
+    margin-top: 1rem;
+    background-color: #fff;
+    height: 3rem;
+    width: 22rem;
+    border-radius: 0.7rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.journalbook {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 1rem;
+  color: blue;
+  font-size: 1.4rem;
+}
+
+.journaldesc {
+  color: black;
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-left: 0.4rem;
+  letter-spacing: 0.05px;
+}
+.Addjournalbutton1outer {
+  display: flex
+;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+}
+.Addjournalbutton1 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #f4f4f4;
+  border: none;
+  font-size: 0.8rem;
+  border-radius: 0.7rem;
+  height: 2rem;
+  width: 7rem;
+  color: black;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+}
+
+.plusicon {
+  color: white;
+  /* background-color: #98a71b; */
+  background-color: #ff4f00;
+  font-size: 0.8rem;
+  border-radius: 10rem;
+  width: 1rem;
+}
+
+.outerinputuserjournal {
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+.inputuserjournal {
+  resize: vertical;
+  background-color: #fff;
+  border: none;
+  width: 22rem;
+  height: 20rem;
+  border-radius: 1rem;
+  padding: 0.7rem;
+}
+
+.userjournalbottom {
+  margin: 0 auto;
+  margin-top: 1rem;
+  background-color: #fff;
+  height: 3rem;
+  width: 22rem;
+  border-radius: 0.7rem;
+  display: flex
+;
+  justify-content: space-between;
+}
+
+.geminisuggestions {
+  height: 30rem;
+  width: 24rem;
+  background-color: #f4f4f4;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  margin-left: 2rem;
+  display: flex
+;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #ff4f00;
+}
+
+.geminitop {
+  background-color: #fff;
+  height: 3rem;
+  width: 22rem;
+  margin-top: 1rem;
+  border-radius: 0.7rem;
+  display: flex
+;
+}
+
+.geminimain {
+  height: 20rem;
+  width: 22rem;
+  background-color: #fff;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  border: none;
+  resize: vertical;
+  padding: 0.7rem;
+}
+
+.geminibottom {
+  margin: 0 auto;
+  background-color: #fff;
+  height: 3rem;
+  width: 22rem;
+  margin-top: 1.3rem;
+  border-radius: 0.7rem;
+  display: flex
+;
+  justify-content: space-between;
+}
+}
+
+
+@media only screen and (max-width: 1070px){
+
+
+  .replaceall{
+    overflow-y: scroll;
+    height: 90%;
+  }
+
+  .Journalarea{
+
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logout{
+    margin-top: 15rem;
+  }
+}
+
+
+@media only screen and (max-width: 900px){
+
+  .profiletop{
+    width: 12rem;
+  }
+
+  .home{
+
+    width: 11rem;
+
+  }
+
+  .calendar{
+    width: 11rem;
+  }
+
+  .history{
+    width: 11rem;
+  }
+  .reminder{
+    width: 11rem;
+  }
+
+  .logout{
+    width: 12rem;
+  }
+
+  .Journalarea{
+    align-items: normal;
+  }
+}
+
+@media only screen and (max-width: 630px){
+  .sidebar{
+    display: none;
+  }
+
+  .Journalarea{
+    align-items: center;
+  }
+
+  /* .collapsesidebar{
+    display: flex;
+  }
+  .collapsesidebar2{
+    display: flex;
+  } */
+
+}
+
+@media only screen and (max-width: 400px){
+
+    .logo{
+      margin-left: 1rem;
+    }
+
+    /* .githubbutton{
+      margin-right: -1.2rem;
+    } */
+}
+
+
+@media only screen and (max-width: 412px){
+
+
+  .dashboardgreeting{
+    align-items: center;
+  }
+  .userjournal {
+    height: 27rem;
+    width: 21rem;
+    background-color: #f4f4f4;
+    border: 1px solid #ff4f00;
+    /* border: 0px solid #ff4f00; */
+    border-radius: 1rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    display: flex
+;
+    /* justify-content: center; */
+    flex-direction: column;
+}
+
+.userjournaltop {
+  margin: 0 auto;
+  margin-top: 1rem;
+  background-color: #fff;
+  height: 3rem;
+  width: 19rem;
+  border-radius: 0.7rem;
+  display: flex
+;
+  justify-content: space-between;
+}
+
+.journalbook {
+  display: flex
+;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 1rem;
+  color: blue;
+  font-size: 1.1rem;
+}
+
+
+.journaldesc {
+  color: black;
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-left: 0.4rem;
+  letter-spacing: 0.05px;
+}
+
+.Addjournalbutton1outer {
+  display: flex
+;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.Addjournalbutton1 {
+  display: flex
+;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #f4f4f4;
+  border: none;
+  font-size: 0.7rem;
+  border-radius: 0.5rem;
+  height: 1.5rem;
+  width: 6rem;
+  color: black;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+}
+
+.inputuserjournal {
+  resize: vertical;
+  background-color: #fff;
+  border: none;
+  width: 19rem;
+  height: 17rem;
+  border-radius: 1rem;
+  padding: 0.7rem;
+}
+
+.userjournalbottom {
+  margin: 0 auto;
+  margin-top: 1rem;
+  background-color: #fff;
+  height: 3rem;
+  width: 19rem;
+  border-radius: 0.7rem;
+  display: flex
+;
+  justify-content: space-between;
+}
+
+.geminisuggestions{
+  height: 27rem;
+  width: 21rem;
+}
+
+.geminitop{
+  width: 19rem;
+}
+
+.geminimain{
+  height: 17rem;
+  width: 19rem;
+}
+
+.geminibottom{
+  width: 19rem;
+}
+
+.improvemorebutton{
+  font-size: 0.8rem;
+  width: 7rem;
+}
+
+.Journalarea{
+  align-items: normal;
+}
+
+.navbar{
+  width: 105vw;
+}
+
+.githubbutton1{
+  margin-right: 1rem;
+}
+
+.username {
+  display: flex
+;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2.5rem;
+}
+
+.collapsesidebar{
+  margin-right: 1rem;
+}
+}
+

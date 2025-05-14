@@ -8,12 +8,25 @@
     <script src="https://kit.fontawesome.com/be3f490722.js" crossorigin="anonymous"></script>
   </head>
   <body>
+
+    <div class="navbar">
+
+      <div class="logo">
+        <span  class="iconlogo">J</span>
+        <span class="logoin">Journizz</span>
+      </div>
+    <div class="rightoflogo">
+      <div class="twitterbutton" onclick="location.href='https://x.com/Divvvvvvv_';">
+        <button class="twitterbutton1"><span class="twitterlogo"><i class="fa-brands fa-x-twitter"></i></span>Twitter</button>
+      </div>
+
+      <div class="githubbutton"  onclick="location.href='https://github.com/DivyanshTulsiani';">
+        <button class="githubbutton1"><span class="githublogo"><i class="fa-brands fa-github"></i></span>Github</button>
+      </div>
+    </div>
+  </div>
     <div class="mainpage">
-      <aside class="sidebar">
-        <div class="logo">
-          <span  class="iconlogo">J</span>
-          <span class="logoin">Journizz</span>
-        </div>
+      <aside class="sidebar" id="sidebar">
 
         <div class="profilesection">
          <div class="profiletop">
@@ -28,6 +41,11 @@
               @Div123
             </div>
           </div>
+          <a class="collapsesidebar" onclick="collapse2()">
+            <i class="fa-solid fa-right-left"></i>
+
+          </a>
+
          </div>
         </div>
 
@@ -81,10 +99,15 @@
           </div>
         </a>
 
-      </aside>
+    </aside>
       
       <div class="main-content">
-        <div class="navbar">
+        <!-- <div class="navbar">
+
+          <div class="logo">
+            <span  class="iconlogo">J</span>
+            <span class="logoin">Journizz</span>
+          </div>
           <div class="twitterbutton" onclick="location.href='https://x.com/Divvvvvvv_';">
             <button class="twitterbutton1"><span class="twitterlogo"><i class="fa-brands fa-x-twitter"></i></span>Twitter</button>
           </div>
@@ -92,8 +115,11 @@
           <div class="githubbutton"  onclick="location.href='https://github.com/DivyanshTulsiani';">
             <button class="githubbutton1"><span class="githublogo"><i class="fa-brands fa-github"></i></span>Github</button>
           </div>
-        </div>
+        </div> -->
       <div class="replaceall">
+        <a class="collapsesidebar2" onclick="collapse()" >
+          <i class="fa-solid fa-right-left"></i>
+        </a>
         <div class="dashboardgreeting">
           <div class="dash" >
             Hi <span id="name">Div!</span>
@@ -326,6 +352,32 @@
 
         }
       }
+
+
+
+//       function collapse2(){
+//     sidebar=document.getElementById("sidebar");
+//     hamberger=document.getElementById("hamberger");
+//     sidebar.classList.toggle("sidebar-collapse");
+//     hamberger.classList.toggle("hamberger-collapse");
+// }
+
+
+      function collapse(){
+
+        console.log("hi from switch");
+        let sidebar = document.getElementById("sidebar");
+
+        sidebar.className = "sidebar"
+      }
+
+      function collapse2(){
+
+        console.log("hi from switch");
+        let sidebar = document.getElementById("sidebar");
+        sidebar.className = "collapse20"
+      }
     </script>
   </body>
 </html>
+
