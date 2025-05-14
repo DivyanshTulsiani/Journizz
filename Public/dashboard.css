@@ -873,6 +873,22 @@ font-size: 2rem;
 
 }
 
+.collapse30{
+  width: 300px;
+  /* height: 100vh; */
+  /* height: 500px; */
+  border-right: 1.8px solid rgb(238, 219, 219);
+  background-color: #f5f5f5;
+}
+
+
+.collapsesidebar:hover{
+  cursor: pointer;
+}
+
+.collapsesidebar2:hover{
+  cursor: pointer;
+}
 
 @media only screen and (max-width: 1210px){
     .userjournal{
@@ -1030,7 +1046,7 @@ font-size: 2rem;
 
   .replaceall{
     overflow-y: scroll;
-    height: 90%;
+    height: 100%;
   }
 
   .Journalarea{
@@ -1078,6 +1094,14 @@ font-size: 2rem;
 }
 
 @media only screen and (max-width: 630px){
+
+  .collapse30{
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #f4f4f4;
+  }
   .sidebar{
     display: none;
   }
@@ -1108,6 +1132,8 @@ font-size: 2rem;
 
 
 @media only screen and (max-width: 412px){
+
+
 
 
   .dashboardgreeting{
@@ -1247,7 +1273,13 @@ font-size: 2rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-right: 2.5rem;
+  margin-left: 0rem;
+
+  /* margin-right: 2.5rem; */
+}
+
+.name{
+  font-size: 1.1rem;
 }
 
 .collapsesidebar{

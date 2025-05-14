@@ -137,7 +137,7 @@
 
 
         <div class="Journalarea">
-          <div class="userjournal">
+          <div class="userjournal" id="userjournal">
               <div class="userjournaltop">
                 <div class="journalbook">
                   <i class="fa-solid fa-book"></i>
@@ -369,6 +369,13 @@
         let sidebar = document.getElementById("sidebar");
 
         sidebar.className = "sidebar"
+
+        const pageWidth = window.innerWidth;
+        console.log(pageWidth);
+        // let greetingtime = document.getElementById("greetingtime")
+        if(pageWidth < 630){
+          sidebar.className = "collapse30"
+        }
       }
 
       function collapse2(){
