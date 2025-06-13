@@ -6,6 +6,7 @@
     <title>Journizz</title>
     <meta charset="UTF-8">
     <script src="https://kit.fontawesome.com/be3f490722.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="/Public/UserImages/D53BC15C-7E79-4CD9-B228-8B09BDB0C576_4_5005_c-photoaidcom-cropped.jpeg">
   </head>
   <body>
 
@@ -130,25 +131,32 @@
           </div>
         </div>
       </div> -->
-
-
-        <div class="alljournals" id="alljournals">
-          <div class="newjournal">
-            <div class="journaldescleft">
-              <div class="journaldescdate">
-
+      <div class="replaceall20">
+        <a class="collapsesidebar21" onclick="collapse()" >
+          <i class="fa-solid fa-right-left"></i>
+        </a>
+  
+          <div class="alljournals" id="alljournals">
+  
+            <div class="newjournal">
+              <div class="journaldescleft">
+                <div class="journaldescdate">
+  
+                </div>
+                <div class="">
+  
+                </div>
               </div>
-              <div class="">
-
+              <div class="journaldescright">
+  
               </div>
             </div>
-            <div class="journaldescright">
-
-            </div>
+            
           </div>
-          
         </div>
       </div>
+
+
 
 
     </div>
@@ -295,6 +303,32 @@
         }
         
       }
+
+
+      function collapse(){
+
+console.log("hi from switch");
+let sidebar = document.getElementById("sidebar");
+
+sidebar.className = "sidebar"
+
+const pageWidth = window.innerWidth;
+console.log(pageWidth);
+// let greetingtime = document.getElementById("greetingtime")
+if(pageWidth < 630){
+  sidebar.className = "collapse30"
+}
+else{
+  sidebar.className = "sidebar"
+}
+}
+
+function collapse2(){
+
+console.log("hi from switch");
+let sidebar = document.getElementById("sidebar");
+sidebar.className = "collapse20"
+}
     </script>
   </body>
 </html>
