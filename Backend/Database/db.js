@@ -38,3 +38,5 @@ module.exports = {
   UserModel: UserModel,
   JournalModel: JournalModel
 }
+
+

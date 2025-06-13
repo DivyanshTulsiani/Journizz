@@ -10,12 +10,26 @@
   <body>
 
 
+    <div class="navbar">
+
+      <div class="logo">
+        <span  class="iconlogo">J</span>
+        <span class="logoin">Journizz</span>
+      </div>
+    <div class="rightoflogo">
+      <div class="twitterbutton" onclick="location.href='https://x.com/Divvvvvvv_';">
+        <button class="twitterbutton1"><span class="twitterlogo"><i class="fa-brands fa-x-twitter"></i></span>Twitter</button>
+      </div>
+
+      <div class="githubbutton"  onclick="location.href='https://github.com/DivyanshTulsiani';">
+        <button class="githubbutton1"><span class="githublogo"><i class="fa-brands fa-github"></i></span>Github</button>
+      </div>
+    </div>
+  </div>
+
+
     <div class="mainpage">
-      <aside class="sidebar">
-        <div class="logo">
-          <span  class="iconlogo">J</span>
-          <span class="logoin">Journizz</span>
-        </div>
+      <aside class="sidebar" id="sidebar">
 
         <div class="profilesection">
          <div class="profiletop">
@@ -23,18 +37,23 @@
             <img src="UserImages/sheldon2.jpeg" class="userimage"> 
           </div>
           <div class="username">
-            <div class="name">
+            <div class="name" id="name2">
               Div
             </div>
-            <div class="username1">
+            <div class="username1" id="username">
               @Div123
             </div>
           </div>
+          <a class="collapsesidebar" onclick="collapse2()">
+            <i class="fa-solid fa-right-left"></i>
+
+          </a>
+
          </div>
         </div>
 
         <div class="sidebaroptions">
-          <a class="home" onclick="backtohome()">
+          <a class="home" href="/dashboard.html">
             <div class="homeicon">
               <i class="fa-solid fa-house"></i> 
             </div>
@@ -53,7 +72,7 @@
             </div>
           </a>
 
-          <a class="history">
+          <a class="history" onclick="validatetoalljournals()">
             <div class="historyicon">
               <i class="fa-solid fa-folder"></i>
             </div>
@@ -78,15 +97,14 @@
             <i class="fa-solid fa-right-from-bracket"></i>
           </div>
 
-          <div class="logoutname" onclick="">
+          <div class="logoutname">
             Logout
           </div>
         </a>
 
-      </aside>
-      
+    </aside>
       <div class="main-content">
-        <div class="navbar">
+        <!-- <div class="navbar">
           <div class="twitterbutton">
             <button class="twitterbutton1"><i class="fa-brands fa-x-twitter"></i>Twitter</button>
           </div>
@@ -94,7 +112,24 @@
           <div class="githubbutton">
             <button class="githubbutton1"><i class="fa-brands fa-github"></i>Github</button>
           </div>
+        </div> -->
+
+        <!-- <div class="navbar">
+
+          <div class="logo">
+            <span  class="iconlogo">J</span>
+            <span class="logoin">Journizz</span>
+          </div>
+        <div class="rightoflogo">
+          <div class="twitterbutton" onclick="location.href='https://x.com/Divvvvvvv_';">
+            <button class="twitterbutton1"><span class="twitterlogo"><i class="fa-brands fa-x-twitter"></i></span>Twitter</button>
+          </div>
+    
+          <div class="githubbutton"  onclick="location.href='https://github.com/DivyanshTulsiani';">
+            <button class="githubbutton1"><span class="githublogo"><i class="fa-brands fa-github"></i></span>Github</button>
+          </div>
         </div>
+      </div> -->
 
 
         <div class="alljournals" id="alljournals">
